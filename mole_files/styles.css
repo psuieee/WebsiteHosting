@@ -1,0 +1,55 @@
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3em;
+    color: #ff6347; /* Tomato color */
+    text-align: left;
+    text-shadow: 2px 2px #ffa07a; /* Light salmon shadow */
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2em;
+    color: #4682b4; /* Steel blue color */
+    text-align: left;
+    text-shadow: 1px 1px #87cefa; /* Light sky blue shadow */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.start-button {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.5em;
+    color: #ffffff; /* White color */
+    background-color: #32cd32; /* Lime green color */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-shadow: 1px 1px #006400; /* Dark green shadow */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-button:hover {
+    background-color: #228b22; /* Forest green color */
+}
+
+.game-over {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2.5em;
+    color: #ff69b4; /* Hot pink color */
+    text-align: center;
+    text-shadow: 2px 2px #ffb6c1; /* Light pink shadow */
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
