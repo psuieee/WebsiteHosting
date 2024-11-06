@@ -4,7 +4,7 @@ import sys
 
 # Step 1: Initialize the socket
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # AF_INET for IPv4, SOCK_STREAM for TCP
-serverSocket.bind(('0.0.0.0', 8080))  # Bind to all interfaces on port 8080
+serverSocket.bind(('0.0.0.0', 80))  # Bind to all interfaces on port 80, on local IP
 serverSocket.listen()  # Start listening for incoming connections
 serverSocket.settimeout(1)  # Set a timeout to check for SIGINT regularly
 

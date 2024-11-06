@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Smith - Portfolio</title>
+    <style>
+        /* General Reset and Font */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a1a2e;
+            color: #f0f0f0;
+            padding: 1em 0.5em;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            color: #87cefa;
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+        header p {
+            font-size: 1.1em;
+        }
+        header a {
+            color: #87cefa;
+            text-decoration: none;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a2e;
+            padding: 0.5em 0;
+            margin-top: -1em;
+        }
+        .navbar a {
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 0.5em 1.5em;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #87cefa;
+            color: #1a1a2e;
+            border-radius: 5px;
+        }
+
+        /* Main Container */
+        .container {
+            width: 80%;
+            max-width: 1100px;
+            margin: 2em auto;
+            padding: 1.5em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 1.5em;
+            color: #1a1a2e;
+            border-bottom: 2px solid #87cefa;
+            padding-bottom: 5px;
+            margin-bottom: 1em;
+        }
+
+        /* Content Styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 1em 0;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        p {
+            margin-bottom: 1em;
+            line-height: 1.8;
+        }
+
+        /* Project Links */
+        .project-list a {
+            color: #1a8cff;
+            text-decoration: none;
+        }
+        .project-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #1a1a2e;
+            color: #f0f0f0;
+            font-size: 0.9em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nathaniel Smith</h1>
+        <p>Bellefonte, PA | 814-880-0685 | <a href="mailto:nss5405@psu.edu">nss5405@psu.edu</a></p>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="navbar">
+        <a href="portfolio.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="https://github.com/17madman" target="_blank">GitHub</a>
+    </div>
+
+        <!-- Remaining resume sections go here as above -->
+    <div class="container">
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <ul class="education-list">
+                <li><strong>Naval Air Station Sigonella High School</strong>, 2017-2021</li>
+                <li><strong>Pennsylvania State University, University Park Campus</strong>, 2021 - 2025</li>
+                <li>Senior majoring in Computer Engineering</li>
+                <li>GPA: 3.2</li>
+            </ul>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section id="research-experience">
+            <h2 class="section-title">Paid Research Experience</h2>
+            <p><strong>Tohoku University</strong> (April 2024 - August 2024)</p>
+            <p>Worked in the Kato/Kawamoto research lab, focusing on utilizing an LSTM machine learning algorithm to predict network traffic in Space, Air, Ground Integrated Networks. Conducted simulations showing a 2% increase in network traffic efficiency compared to reactive methods.</p>
+        </section>
+
+        <!-- Software Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Software Projects</h2>
+            <p>All projects available on my <a href="https://github.com/17madman" target="_blank">GitHub</a>.</p>
+            <ul class="project-list">
+                <li><strong>Course Scheduler</strong> - Java, SQL, Derby Database
+                    <p>Application for course creation by administrators and enrollment by students.</p>
+                </li>
+                <li><strong>AI Clone Bot</strong> - Python
+                    <p>Chatbot using GPT-3.5 Turbo API and ElevenLabs AI voice cloning to mimic friends in conversation.</p>
+                </li>
+                <li><strong>CMPEN 331 Final Project</strong> - Verilog
+                    <p>Designed and implemented a 32-bit MIPS-based processor.</p>
+                </li>
+                <li><strong>Anti-Spam Bot</strong> - Python
+                    <p>Monitors IEEE club chats and deletes spam messages from bad actors.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience">
+            <h2 class="section-title">Professional Work Experience</h2>
+            <ul class="experience-list">
+                <li><strong>Tech Support Assistant</strong> - Jackson Hewitt Tax Service, 2020 – 2021</li>
+                <li><strong>Auxiliary Police Officer</strong> - Penn State University, Spring 2023 – Fall 2023</li>
+                <li><strong>Voting Registration</strong> - Project 26, 2024 – Present</li>
+            </ul>
+        </section>
+
+        <!-- Extracurricular Activities Section -->
+        <section id="extracurriculars">
+            <h2 class="section-title">Extracurricular Activities</h2>
+            <ul class="experience-list">
+                <li><strong>Special Operations Officer</strong> - Penn State IEEE Chapter, 2021 – Present
+                    <p>Projects committee member and Special Operations Officer, leading workshops and team projects to benefit the club, such as spam-limiting bots and event reminders.</p>
+                </li>
+                <li><strong>Member</strong> - Ohana THON Organization, 2023 - 2024</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">Skills & Abilities</h2>
+            <ul class="skills-list">
+                <li>Programming Languages: Java, C#, C, Python</li>
+                <li>Tools & Platforms: Linux, Visual Studio, Verilog</li>
+                <li>Hardware Skills: Assembly, PCB Development (Ultiboard), Circuit Development (Multisim), Soldering</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Nathaniel Smith - All rights reserved.
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
