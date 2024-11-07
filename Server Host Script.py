@@ -11,7 +11,7 @@ serverSocket.settimeout(1)  # Set a timeout to check for SIGINT regularly
 print('Socket Started!')
 running = True  # Flag to control the loop
 
-def signal_handler(sig, frame):
+def signal_handler(sig, frame): #Signal handler, when server host presses Ctrl+C, stops server.
     global running
     print('Stopping server...')
     running = False  # Set flag to False to exit loop
